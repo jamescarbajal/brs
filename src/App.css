@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;;
+  background-color: #61dafb;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.site-footer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-size:15px;
+  line-height:24px;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.site-footer a
+{
+  text-decoration: none;
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links
+{
+  padding:0;
+  list-style:none;
+}
+
+.footer-links li
+{
+  display:block;
+}
+
+.footer-links a
+{
+  color: #000;
+  font-size: 13px;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links.inline li
+{
+  display:inline-block;
+}
+
+.gitLink {
+  color: rgb(109, 80, 80);
+  text-decoration: none;
+}
+
+
+/* Hamburger Menu CSS */
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  line-height: 50px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  font-family: sans-serif ;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: sticky;
+  width: 32px;
+  height: 28px;
+  left: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+  height: 30px;
+  width: 30px;
+}
+
+.bm-menu {
+  background: rgba(0, 0, 0, 0.7);
+  top:0;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: -10px;
+}
+
+.bm-menu-wrap {
+  position: absolute;
+  top:0;
+  left:0;
+  margin-top: 30px;
+  height: 100%;
+  transform: translate(0, -45px);
+}
+
+.bm-morph-shape {
+  fill: #777c90;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  box-sizing: content-box;
+}
