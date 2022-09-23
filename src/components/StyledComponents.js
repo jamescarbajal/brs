@@ -177,8 +177,7 @@ export const CartImage = styled.img`
 
 export const CartItemContainer = styled.div`
     position: relative;
-    min-width: fit-content;
-    width: 100%;
+    max-width: 90vw;
     min-height: 200px;
     height: fit-content;
     display: flex;
@@ -186,7 +185,7 @@ export const CartItemContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: 1px solid lightgray;
     border-radius: 7px;
 `;
@@ -201,14 +200,31 @@ export const CartPromptWrapper = styled.div`
     width: 100%;
 `;
 
+export const CartSummary = styled.div`
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px lightblue;
+`;
+
 export const CartWrapper = styled.div`
     position: relative;
     display: flex;
     flex-flow: column;
-    align-self: flex-start;
-    min-height: fit-content;
-    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    height: 100%;
+    min-height: fit-content;
 `;
 
 export const ColumnContainer = styled.div`
