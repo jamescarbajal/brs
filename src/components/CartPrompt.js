@@ -37,14 +37,14 @@ export default function CartPrompt(props) {
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                         <ModalImage style={{ height: 'auto', maxHeight: '150px', maxWidth: '150px' }} src={image} />
                         <ModalWrapperContents>
-                                <TruncateMarkup lines={4} >
-                                    <div style={{ maxHeight: '150px', maxWidth: '200px' }}>
-                                        {description}
-                                    </div>
-                                </TruncateMarkup>
+                            <TruncateMarkup lines={4} >
+                                <div style={{ maxHeight: '150px', maxWidth: '200px' }}>
+                                    {description}
+                                </div>
+                            </TruncateMarkup>
                         </ModalWrapperContents>
                     </div>
-                    <span class="mt-4">
+                    <span class="mb-3">
                         Are you sure you want to remove this item from your cart?
                     </span>
                     <div class="d-flex flex-row ">

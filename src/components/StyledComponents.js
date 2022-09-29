@@ -469,7 +469,6 @@ export const ProductImage = styled.img`
 export const StyledButton = styled.button`
     font-size: 14px;
     font-weight: 700;
-    margin-top: 20px;
     color: rgba( 75, 75, 75, 1);
     height: 30px;
     width: 200px;
@@ -479,7 +478,7 @@ export const StyledButton = styled.button`
     border: 1px gray;
     border-radius: 5px;
     box-shadow: 3px 5px 5px gray;
-    background-color: rgba( 200, 200, 255, 0.5);
+    background-color: rgba( 200, 200, 255, 0.25);
 `;
 
 export const StyledInput = styled.input`
