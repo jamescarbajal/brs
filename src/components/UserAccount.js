@@ -58,9 +58,6 @@ export default function UserAccount(props) {
                 </div>
                     <AccountButton onClick={HandleLogout}>Logout</AccountButton>
             </ColumnContainer>
-            <form action="/post" method="post">
-                <button type="submit">Connect to Server</button>
-            </form>
         </>
 
     );

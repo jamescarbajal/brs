@@ -35,7 +35,12 @@ export default function AppFooter() {
                                 </div>
                             </div>
                         </div>
+
+                            <form class="text-center" style={{ height: "50px" }} action="/post" method="post">
+                                <button class="btn btn-dark" type="submit">Connect to Server</button>
+                        </form>
                     </div>
         </FooterContainer>
+        
     );
 };
