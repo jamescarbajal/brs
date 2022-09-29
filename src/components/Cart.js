@@ -37,47 +37,59 @@ export default function Cart(props) {
     return (
           <>
             <div style={{ height: '130px' }}></div>
-            <MiniHeader style={{ position: 'absolute', marginTop: '110px' }}>Your Cart</MiniHeader>
+            <MiniHeader style={{ position: 'absolute', marginTop: '110px' }}>
+              Your Cart
+            </MiniHeader>
           
-              {isLoading ? (
+            {isLoading ? (
 
                 <MiniHeader>Loading cart...</MiniHeader>
 
               ):(
-                <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="container-fluid">
                   <div class="row">
-                  <CartWrapper class="col col-sm-8">
-                    {currentCartData.length > 0 ? (
+                    <div class="col-12 col-lg-8">
+                    <CartWrapper>
+                      {currentCartData.length > 0 ? (
 
-                      currentCartData.map( (item) => (
+                        currentCartData.map( (item) => (
 
-                        <CartItem id={item.id} quantity={item.quantity} title={item.title} description={item.description} image={item.image} category={item.category} price={item.price}/>
-                      ))           
+                          <CartItem id={item.id} quantity={item.quantity} title={item.title} description={item.description} image={item.image} category={item.category} price={item.price}/>
+                        ))           
 
-                    ):(
-                      <>
-                        <MiniHeader>
-                          Cart is EMPTY!! 
-                        </MiniHeader>
-                        <MiniHeader style={{ padding: '30px' }}>
-                          Why don't you find your next favorite piece in our <NavLink style={{ weight: 'bold', textDecoration: 'none', color: 'blue' }} to="/Shop">SHOP</NavLink>!
-                        </MiniHeader>
-                      </>
-                    )}
-                  </CartWrapper>
-                  <CartSummary>
-                      <div class="row">
-                        <span>Subtotal: </span>
-                        <span>Taxes: </span>
-                        <span>Shipping: </span>
-                        <span>Credits: </span>
-                        <span>Total: </span>
+                      ):(
+                        <>
+                          <MiniHeader>
+                            Cart is EMPTY!! 
+                          </MiniHeader>
+                          <MiniHeader style={{ padding: '30px' }}>
+                            Why don't you find your next favorite piece in our <NavLink style={{ weight: 'bold', textDecoration: 'none', color: 'blue' }} to="/Shop">SHOP</NavLink>!
+                          </MiniHeader>
+                        </>
+                      )}
+                    </CartWrapper>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex flex-column align-items-center">
+                    <CartSummary>
+                      <div class="column">
+                        <div>Subtotal: </div>
+                        <div>Taxes: </div>
+                        <div>Shipping: </div>
+                        <div>Credits:</div>
                       </div>
                     </CartSummary>
+                    <CartSummary>
+                      <div class="column">
+                      <div>Total: </div>
+                      </div>
+                    </CartSummary>
+                    <div style={{ marginBottom: "20px" }}>
+                      <button class="btn btn-outline-dark fw-bold">CHECKOUT</button>
+                    </div>
                     </div>
                   </div>
+                </div>
               )}
-
 
         </>
     );

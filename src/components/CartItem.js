@@ -59,7 +59,7 @@ export default function CartItem(props) {
     }, [cartItems]);
 
     return(
-        <div class="mx-auto" style={{ width: '90%', padding: '5px' }}>
+        <>
             <CartItemContainer>
                 <div class="col-12 col-md-3 d-flex justify-content-center" onClick={ViewProductClick} style={{ cursor: 'pointer' }}>
                 <CartImage src={image} alt={title}></CartImage>
@@ -103,6 +103,6 @@ export default function CartItem(props) {
         <ProductModal category={category} description={description} id={id} image={image} price={price} title={title} quantity={quantity} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}  />
 
         <CartPrompt id={id} image={image} description={description} isPromptOpen={isPromptOpen} setIsPromptOpen={setIsPromptOpen} />
-    </div>
+    </>
     );
 };

@@ -177,8 +177,7 @@ export const CartImage = styled.img`
 
 export const CartItemContainer = styled.div`
     position: relative;
-    max-width: 90vw;
-    min-height: 200px;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -201,14 +200,9 @@ export const CartPromptWrapper = styled.div`
 `;
 
 export const CartSummary = styled.div`
-    position: relative;
     width: 100%;
     max-width: 500px;
-    min-height: 150px;
     height: fit-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid lightblue;
@@ -222,7 +216,6 @@ export const CartWrapper = styled.div`
     flex-flow: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
     height: 100%;
     min-height: fit-content;
 `;
